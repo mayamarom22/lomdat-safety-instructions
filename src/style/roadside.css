@@ -1,0 +1,373 @@
+.roadside-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+  /* margin-top: -1.5rem; */
+}
+
+.sec-title-subjects {
+  position: absolute;
+  top: 8rem;
+  right: 1rem; /* מוצמד לצד ימין של הקונטיינר */
+  width: auto; /* או לפי הצורך */
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+  color: #FFEE97;
+}
+
+.roadside-text {
+  position: relative;
+  top: 8.3rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.3rem;
+  color: #FFEE97;
+  font-family: "rubik";
+  text-align: right;
+  margin: 0rem 1rem;
+  padding-top: 0.5rem;
+  /* width: 15rem; */
+
+}
+
+.roadSideHighlight {
+  z-index: 1;
+  width: 30rem;
+  position: absolute;
+  top: 55%;
+  right: 49%;
+  transform: translate(+50%, -50%);
+  animation: biggerHighlight 1.8s ease-in-out infinite;
+}
+
+@keyframes biggerHighlight {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.page2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  margin-top: 2rem;
+
+}
+.margin {
+  margin-top: 2rem;
+}
+.page5 {
+  margin-top: 1.5rem;
+}
+
+.boxPlanned {
+  z-index: 1;
+  width: 11rem;
+  position: relative;
+  top: 20.6rem;
+  left: 7rem;
+}
+
+.boxUnplanned {
+  z-index: 1;
+  width: 11rem;
+  position: relative;
+  top: 7rem;
+  left: -6.3rem;
+}
+
+.mirror {
+  position: relative;
+  top: -21.5rem;
+  right: -1rem;
+  width: 19rem;
+  height: 15rem;
+  background-image: url('../assets/images/roadside/mirror.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  /* אין צבע רקע */
+  border: none;
+  /* אין מסגרת */
+  outline: none;
+  /* מסגרת ברירת מחדל של פוקוס נעלמת */
+  padding-top: 5rem;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+  font-family: "rubik";
+  font-weight: 800;
+  color: #000000;
+  z-index: 2;
+}
+
+.mirror-broken {
+  position: relative;
+  top: -21.45rem;
+  right: -1.15rem;
+  width: 19rem;
+  height: 15rem;
+  background-image: url('../assets/images/roadside/brokenMirror.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  /* אין צבע רקע */
+  border: none;
+  /* אין מסגרת */
+  outline: none;
+  /* מסגרת ברירת מחדל של פוקוס נעלמת */
+  padding-top: 5rem;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+  font-family: "rubik";
+  font-weight: 800;
+  color: #000000;
+  z-index: 2; 
+}
+
+.mirror-text {
+  width: 9rem;
+  position: relative;
+  right: 4rem;
+}
+
+.counter-unplanned {
+  z-index: 2;
+  width: 9rem;
+  position: relative;
+  top: 15.8rem;
+  left: -6.3rem;
+  font-family: "rubik";
+  color: #003F88;
+  font-weight: 700;
+  pointer-events: none;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.counter-planned {
+  z-index: 2;
+  width: 9rem;
+  position: relative;
+  top: 2rem;
+  left: 7rem;
+  font-family: "rubik";
+  color: #003F88;
+  font-weight: 700;
+  pointer-events: none;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.planned {
+  z-index: 2;
+  width: 9rem;
+  position: relative;
+  top: 16rem;
+  left: 7rem;
+  font-family: "rubik-bold";
+  color: #003F88;
+  font-weight: 800;
+  font-size: 1.2rem;
+  pointer-events: none;
+}
+
+.unplanned {
+  z-index: 3;
+  width: 9rem;
+  position: relative;
+  top: 2.5rem;
+  left: -6.3rem;
+  font-family: "rubik-bold";
+  font-size: 1.2rem;
+  color: #003F88;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.graphics-right-wrong-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.graphic-right {
+  width: 10.5rem;
+  height: 10.5rem;
+  background-image: url('../assets/images/roadside/wheelYes.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  /* אין צבע רקע */
+  border: #FFEE97 solid 5px;
+  /* אין מסגרת */
+  outline: none;
+  z-index: 2;
+  position: relative;
+  top: 6.5rem;
+  left: 0.4rem;
+  border-radius: 1rem;
+}
+
+.div-text-graphic-right {
+  margin-top: 5.8rem;
+  margin-right: -2.8rem;
+  width: 17rem;
+  height: 9.5rem;
+  background-image: url('../assets/images/blur-bubble.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  /* אין צבע רקע */
+  border: none;
+  /* אין מסגרת */
+  outline: none;
+}
+.text-graphic-right {
+  position: relative;
+  top: 2.7rem;
+  right: 2rem;
+  font-family: "rubik";
+  width: 12rem;
+  color: #003F88;
+  font-weight: 700;
+}
+/* wrong */
+.graphic-wrong {
+  width: 10.5rem;
+  height: 10.5rem;
+  background-image: url('../assets/images/roadside/wheelNo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  /* אין צבע רקע */
+  border: #FFEE97 solid 5px;
+  /* אין מסגרת */
+  outline: none;
+  position: relative;
+  top: 11rem;
+  left: 0.4rem;
+  border-radius: 1rem;
+}
+.text-graphic-wrong {
+  position: relative;
+  top: 2.5rem;
+  right: 1rem;
+  font-family: "rubik";
+  width: 12rem;
+  color: #003F88;
+  font-weight: 700;
+}
+
+.div-text-graphic-wrong {
+  margin-top: 6rem;
+  margin-right: -2rem;
+  width: 15rem;
+  height: 7.5rem;
+  background-image: url('../assets/images/blur-bubble.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  /* אין צבע רקע */
+  border: none;
+  /* אין מסגרת */
+  outline: none;
+}
+.big-vi {
+  position: relative;
+  top: -16.5em;
+  left: 5rem;
+}
+.big-x {
+  position: relative;
+  top: -14.5rem;
+  left: 5rem;
+}
+
+@media (max-width: 400px) {
+  .boxPlanned {
+    width: 9rem;
+    top: 20.6rem;
+    left: 5.5rem;
+  }
+  
+  .boxUnplanned {
+    width: 9rem;
+    top: 7.7rem;
+    left: -4.9rem;
+  }
+  .counter-unplanned {
+    width: 6rem;
+    top: 15.5rem;
+    left: -5rem;
+    font-size: 0.8rem;
+    white-space: wrap;
+    line-height: normal;
+  }
+  
+  .counter-planned {
+    width: 6rem;
+    top: 2.6rem;
+    left: 5.5rem;
+    pointer-events: none;
+    font-size: 0.8rem;
+    white-space: wrap;
+    line-height: normal;
+  }
+  .planned {
+    width: 9rem;
+    top: 15.5rem;
+    left: 5.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .unplanned {
+    width: 9rem;
+    top: 2.5rem;
+    left: -5rem;
+    font-size: 1.1rem;
+  }
+  .mirror {
+    position: relative;
+    top: -20.5rem;
+    right: -1rem;
+  }
+  .mirror-broken {
+    position: relative;
+    top: -20.45rem;
+    right: -1.15rem;
+  }
+}
+
+.videos {
+  width: 90%;
+  position: absolute;
+  top: 40%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+@media (max-width: 380px) {
+  .roadSideHighlight {
+    top: 58%;
+  }
+}

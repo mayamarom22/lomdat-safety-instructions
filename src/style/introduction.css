@@ -1,0 +1,250 @@
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: -1.5rem;
+}
+
+.title-subjects {
+    position: relative;
+    top: 5rem;
+    font-size: 2.4rem;
+    font-family: "abraham";
+    color: #FFEE97;
+    margin-top: -0.8rem;
+}
+
+.intro-page2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.sec-title-intro {
+    position: relative;
+    width: 25rem;
+    top: 4rem;
+    font-size: 1.4rem;
+    font-family: "rubik";
+    color: #FFEE97;
+}
+
+.sign-crash {
+    position: relative;
+    top: 7rem;
+    right: -1.3rem;
+    width: 26rem;
+    height: 25rem;
+    background-image: url('../assets/images/introduction/signCrash.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "rubik";
+    font-size: 1.1rem;
+    color: #003F88;
+    pointer-events: auto;
+    display: flex;                /* נשתמש בפלקס */
+    align-items: center;          /* מרכז אנכית */
+    justify-content: flex-start;      /* מרכז אופקית */
+    text-align: right;            /* עברית */
+    direction: rtl;               /* עברית */
+    padding: 1.5rem;              /* רווח פנימי כדי שהנקודות ייראו */
+  }
+  
+  .my-list {
+    list-style-type: disc ; /* מוודא שהנקודות חוזרות */
+    list-style-position: outside;     /* שהנקודות יהיו קרובות לטקסט */
+    margin-right: 3rem;
+    margin-top: -15rem;
+    padding: 0;
+  }
+  
+  .my-list li {
+    margin-bottom: 0.5rem;
+  }
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 0 2rem;
+  }
+/*   
+  .nav-buttons1  {
+    background-color: #003F88;
+    color: #FFEE97;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 1rem;
+    font-family: "rubik";
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 2;
+  } */
+  
+  .nav-buttons button:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
+  }
+  .nav-button1{
+    position: absolute;
+    top: 81%;
+    right: 18%;
+    transform: translate(+50%,-50%);
+    width: 4rem;
+    height: 4rem;
+    background-image: url('../assets/images/backBtn.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent; /* אין צבע רקע */
+    border: none;                  /* אין מסגרת */
+    cursor: pointer;               /* עכבר מראה שהוא לחיץ */
+    outline: none;                 /* מסגרת ברירת מחדל של פוקוס נעלמת */
+    padding-top: -0.7rem; 
+    font-family: "rubik";
+    font-weight: 700; 
+    color: #003F88;
+    pointer-events: auto;
+    z-index: 2;
+  }
+  .nav-button2{
+    position: absolute;
+    top: 81%;
+    right: 78%;
+    transform: translate(+50%,-50%);
+    width: 4rem;
+    height: 4rem;
+    background-image: url('../assets/images/nextBtn.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent; /* אין צבע רקע */
+    border: none;                  /* אין מסגרת */
+    cursor: pointer;               /* עכבר מראה שהוא לחיץ */
+    outline: none;                 /* מסגרת ברירת מחדל של פוקוס נעלמת */
+    padding-top: -0.5rem; 
+    font-family: "rubik";
+    font-weight: 700; 
+    color: #003F88;
+    pointer-events: auto;
+    z-index: 2;
+  }
+  .next-btn {
+    position: relative;          /* מיקום יחסית לקונטיינר */
+    z-index: 10;                   /* מעל כל התוכן */
+    background-color: #FFEE97;
+    color: #003F88;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: bounce 1s infinite; /* אנימציית קליטה */
+  }
+  
+  .next-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  }
+  
+  .next-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .next-btn:disabled {
+    background-color: #dbdbdb;
+    color: #666;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+    animation: none;  /* מבטל אנימציה כשהכפתור מושבת */
+  }
+  
+  /* אנימציית קליטה קלה */
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+
+  .accident1 {
+    position: relative;
+    left: 5rem;
+    margin-top: 5rem;
+    border-radius: 1rem;
+    width: 20rem;
+    transform: rotate(5deg);
+  }
+  .accident2 {
+    position: relative;
+    top: -8rem;
+    right: 5rem;
+    border-radius: 1rem;
+    width: 20rem;
+    transform: rotate(-5deg);
+  }
+  .accident3 {
+    position: relative;
+    top: -12rem;
+    left: 5rem;
+    border-radius: 1rem;
+    width: 20rem;
+    transform: rotate(5deg);
+  }
+  .accident4 {
+    position: relative;
+    top: -20rem;
+    right: 5rem;
+    border-radius: 1rem;
+    width: 20rem;
+    transform: rotate(-5deg);
+  }
+
+  .accident1,
+  .accident2,
+  .accident3,
+  .accident4 {
+    opacity: 0;
+    transition: opacity 1.5s ease;
+  }
+
+.fade-in {
+  opacity: 1;
+}
+  
+  @media (max-width: 380px) {
+    .sign-crash {
+      width: 23rem;
+      right: -1.2rem;
+      font-size: 0.95rem;
+    }
+    .my-list {
+      margin-top: -12.5rem;
+    }
+  }
+  @media (max-width: 335px) {
+    .sec-title-intro{
+      width: 22rem;
+      font-size: 1.2rem;
+    }
+    .sign-crash {
+      width: 21rem;
+      font-size: 0.87rem;
+    }
+    .my-list {
+      margin-top: -11.3rem;
+    }
+  }
+
+  
+  
+  
+  
+  

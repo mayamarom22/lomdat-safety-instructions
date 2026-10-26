@@ -1,0 +1,303 @@
+.all-rocks {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    /* margin-top: 1rem; */
+}
+.container-rock1 {
+    position: relative;
+    top: 13.5rem;
+    left: 8rem;
+    z-index: 1;
+}
+.container-rock2 {
+    position: relative;
+    top: 14.5rem;
+    left: 9.5rem;
+    z-index: 1;
+}
+.container-rock3 {
+    position: relative;
+    top: 5.5rem;
+    right: 7rem;
+    z-index: 1;
+}
+.container-rock4 {
+    position: relative;
+    top: 3.5rem;
+    right: 10.5rem;
+    z-index: 1;
+}
+.container-rock5 {
+    position: relative;
+    top: 3.9rem;
+    right: 11rem;
+    z-index: 1;
+}
+
+.rock1 {
+    width: 4rem;
+}
+.vi1 {
+    position: relative;
+    top: -1rem;
+    left: 1rem;
+}
+.vi2 {
+    position: relative;
+    top: -2rem;
+    left: 1.5rem;
+}
+.vi3 {
+    position: relative;
+    top: -2.3rem;
+    left: 1.3rem;
+}
+.vi4 {
+    position: relative;
+    top: -2.3rem;
+    left: 1.3rem;
+}
+.vi5 {
+    position: relative;
+    top: -2.3rem;
+    left: 1.3rem;
+}
+.active-rock {
+    filter: drop-shadow(0 0 15px #002983);
+    transition: filter 0.3s ease;
+  }
+  
+.big-rock1 {
+    position: relative;
+    top: -3rem;
+    width: 17rem;
+    height: 12rem;
+    background-image: url('../assets/images/rocks/big-rock1.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    /* אין צבע רקע */
+    border: none;
+    /* אין מסגרת */
+    outline: none;
+}
+.big-rock2 {
+    position: relative;
+    top: -3rem;
+    width: 15rem;
+    height: 15.4rem;
+    background-image: url('../assets/images/rocks/big-rock2.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    /* אין צבע רקע */
+    border: none;
+    /* אין מסגרת */
+    outline: none;
+}
+.big-rock3 {
+    position: relative;
+    top: -4rem;
+    left: 1rem;
+    width: 21rem;
+    height: 16rem;
+    background-image: url('../assets/images/rocks/big-rock3.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    /* אין צבע רקע */
+    border: none;
+    /* אין מסגרת */
+    outline: none;
+}
+.big-rock4 {
+    position: relative;
+    top: -4rem;
+    /* left: 1rem; */
+    width: 17rem;
+    height: 16rem;
+    background-image: url('../assets/images/rocks/big-rock4.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    /* אין צבע רקע */
+    border: none;
+    /* אין מסגרת */
+    outline: none;
+}
+.big-rock5 {
+    position: relative;
+    top: -4rem;
+    /* left: 1rem; */
+    width: 14rem;
+    height: 17rem;
+    background-image: url('../assets/images/rocks/big-rock5.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    /* אין צבע רקע */
+    border: none;
+    /* אין מסגרת */
+    outline: none;
+}
+.rock.selected {
+    filter: drop-shadow(0 0 20px #002983);
+    transition: filter 0.3s ease;
+  }
+
+  .text-rocks {
+    color: white;
+    font-family: "rubik";
+    font-weight: 700;
+    font-size: 1.2rem;
+    width: 13rem;
+    position: relative;
+    top: 4rem;
+    right: 2.5rem;
+  }
+  .text-rock1 {
+    width: 13rem;
+    position: relative;
+    top: 4rem;
+    right: 2.5rem;
+  }
+  .text-rock2 {
+    width: 10rem;
+    position: relative;
+    top: 5rem;
+    right: 2.5rem;
+  }
+  .text-rock3 {
+    width: 10rem;
+    position: relative;
+    top: 5rem;
+    right: 6rem;
+  }
+  .text-rock4 {
+    width: 13rem;
+    position: relative;
+    top: 5rem;
+    right: 1.5rem;
+  }
+  .text-rock5 {
+    width: 9rem;
+    position: relative;
+    top: 5rem;
+    right: 3rem;
+  }
+  @media (max-width: 380px) {
+    .all-rocks{
+        margin-top: 1rem;
+    }
+    .big-rock1{
+        width: 14.3rem;
+        height: 10rem;
+        margin-top: 2rem;
+    }
+    .big-rock2 {
+        top: -2rem;
+        width: 13rem;
+        height: 13.3rem;
+    }
+    .big-rock3 {
+        top: -3rem;
+        left: 1rem;
+        width: 19rem;
+        height: 15rem;
+    }
+    .big-rock4 {
+        top: -1rem;
+        width: 15rem;
+        height: 14rem;
+    }
+    .big-rock5 {
+        top: -3rem;
+        left: -0.5rem;
+        width: 12rem;
+        height: 15rem;
+
+    }
+
+    .text-rock1 {
+        width: 13rem;
+        top: 4rem;
+        right: 1rem;
+      }
+      .text-rock2 {
+        top: 5rem;
+        right: 1.5rem;
+      }
+      .text-rock3 {
+        width: 9rem;
+        position: relative;
+        top: 5rem;
+        right: 5.5rem;
+      }
+      .text-rock4 {
+        right: 1rem;
+      }
+      .text-rock5 {
+        right: 2.5rem;
+      }
+    .container-rock1 {
+        top: 14rem;
+        left: 7rem;
+    }
+    .container-rock2 {
+        top: 15rem;
+        left: 8rem;
+    }
+    .container-rock3 {
+        top: 6rem;
+        right: 6.5rem;
+    }
+    .container-rock4 {
+        top: 4rem;
+        right: 9.5rem;
+    }
+    .container-rock5 {
+        top: 4rem;
+        right: 10rem;
+    }
+  }
+  @media (max-width: 355px) {
+    .rock1 {
+        width: 3.6rem;
+    }
+    .rock2 {
+        width: 3.5rem;
+    }
+    .rock3 {
+        width: 4rem;
+    }
+    .rock4 {
+        width: 3.3rem;
+    }
+    .container-rock2 {
+        left: 7.3rem;
+    }
+    .container-rock3 {
+        top: 6.5rem;
+        right: 6rem;
+    }
+    .container-rock4 {
+        top: 4.5rem;
+        right: 8.7rem;
+    }
+    .container-rock5 {
+        top: 4rem;
+        right: 9rem;
+    }
+
+  }
+ 
+
+  
+  

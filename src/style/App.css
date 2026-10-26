@@ -1,0 +1,156 @@
+
+
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  background-color: #c2deff;
+  overscroll-behavior: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 91vh;
+  overflow:  hidden;
+  /* background-color: #FEECD8; */
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  direction: rtl;
+  width: 100%;
+  max-width: 430px;
+  height: 47rem;
+  background-color: #003F88;
+  font-family: 'askim';
+  overflow: hidden;
+  position: relative;
+  /* direction: ltr; */
+}
+.bahad6 {
+  position: absolute;
+  left: 0.3rem;
+  z-index: 3;
+}
+.til-logo {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 3;
+  width: 3.2rem;
+}
+.bg-container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+.narration-toggle {
+  position: absolute;
+  left: 4rem;
+  top: 1rem;
+  z-index: 2;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 4rem;
+  padding: 4px;
+
+  font-family: "rubik";
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+
+  border-radius: 6rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+  color: #111;
+
+  cursor: pointer;
+  user-select: none;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: 
+    transform 120ms ease,
+    box-shadow 120ms ease,
+    background 120ms ease,
+    border-color 120ms ease;
+}
+
+/* Hover */
+.narration-toggle:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  border-color: rgba(0, 0, 0, 0.18);
+}
+
+/* לחיצה */
+.narration-toggle:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+/* נגישות - טבעת פוקוס */
+.narration-toggle:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.35), 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* מצב פעיל (ON) */
+.narration-toggle.on {
+  background: #FFEE97; /* ירקרק */
+  border-color: #8094bb;
+  color: #003F88;
+}
+
+/* מצב כבוי (OFF) */
+.narration-toggle.off {
+  background: rgba(199, 183, 183, 0.473); /* אדמדם */
+  border-color: rgba(0, 0, 0, 0.28);
+  color: #000000;
+}
+
+
+/* אופציונלי: כפתור צף קבוע בפינה */
+
+@font-face {
+  font-family: "rubik";
+  src: url("../assets/fonts/Rubik-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "rubik-bold";
+  src: url("../assets/fonts/Rubik-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "abraham";
+  src: url("../assets/fonts/Abraham-Regular.ttf") format("truetype");
+}
+
+@media (max-width: 380px) {
+  .bg-container {
+    top: 57%;
+    width: 31rem;
+    height: 70rem;
+  }
+}
+
+ 
+
+

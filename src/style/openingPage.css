@@ -1,0 +1,390 @@
+/* Fade-out של OpeningPage */
+.opening-page {
+  opacity: 1;
+  transition: opacity 0.8s ease;
+}
+
+.opening-page.fade-out1 {
+  opacity: 0;
+}
+
+/* Fade-in של openText */
+.fade-in-text {
+  opacity: 0;
+  animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  } 
+}
+  
+.about-btn {
+  position: absolute;
+  border: none;
+  color: #003F88;
+  font-size: 1.5rem;
+  font-weight: 550;
+  background-color: #FFEE97;
+  border-radius: 150px;
+  width: 2rem;
+  height: 2rem;
+  left: 4.5rem;
+  top: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2;
+}
+.about-text-btn {
+  position: absolute;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 2rem;
+  height: 2rem;
+  left: 4.7rem;
+  top: 3rem;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2;
+  font-family: "rubik";
+  color: #FFEE97;
+}
+/* .about-btn {
+    position: absolute;
+    border: none;
+    color: #003F88;
+    font-size: 1.5rem;
+    font-weight: 550;
+    background-color: #FFEE97;
+    border-radius: 150px;
+    width: 2rem;
+    height: 2rem;
+    left: 8.5rem;
+    top: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    cursor: pointer;
+    z-index: 2;
+} */
+/* .about-text-btn {
+  position: absolute;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 2rem;
+  height: 2rem;
+  left: 8.7rem;
+  top: 3rem;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2;
+  font-family: "rubik";
+  color: #FFEE97;
+} */
+
+.div-about {
+    position: absolute;
+    color: #003F88;
+    width: 40%;
+    height: 45%;
+    left: 4rem;
+    top: 5rem;
+    font-family: "rubik";
+    background: #FFEE97;
+    border-radius: 1rem;
+    box-shadow: 0 15px 20px -20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.list-text-about {
+    transition: background-color 0.5s ease;
+    margin: 5%;
+}
+
+.list-text-about:hover {
+    background-color: #dbdbdb;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.fade-out1.hidden {
+  display: none;
+}
+
+.main-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+    font-family: "abraham";
+    color: #FFEE97;
+    font-size: 2.7rem;
+    width: 20rem;
+    position: relative;
+    top: -5.5rem;
+    z-index: 1;
+}
+
+/* .carGraphic {
+    z-index: 3;
+    width: 15rem;
+    height: 16rem;
+    position: relative;
+    top: -10rem;
+    left: 0.3rem;
+} */
+.carEnd {
+    position: relative;
+    top: -3rem;       /* מיקום רגיל במסך */
+    left: 0.3rem;
+    width: 11rem;
+    height: 12rem;
+    cursor: pointer;
+  }
+  .carGraphic {
+    position: relative;
+    top: -12rem;       /* מיקום רגיל במסך */
+    left: 0.3rem;
+    width: 12rem;
+    height: 13rem;
+    cursor: pointer;
+  }
+  
+  .car-animate {
+    animation: driveDown 3s linear forwards;
+  }
+  
+  @keyframes driveDown {
+    0% {
+      transform: translateY(0);
+      width: 12rem;
+      height: 13rem;
+    }
+    100% {
+      transform: translateY(80vh); /* סוף – מחוץ למסך */
+      width: 24rem;
+      height: 25rem;  
+    }
+  }
+  
+.cloud-container {
+    position: relative;
+    top: -3rem;
+    left: 12rem;
+    width: 100%;
+    height: 200px; /* גובה שבו הענן יכול לנוע */
+    overflow: hidden; /* כדי שהענן שלא יצא מהקונטיינר */
+  }
+  
+  .cloud {
+    position: absolute;
+    top: 4rem; /* גובה הענן */
+    left: 0;
+    width: 9rem; /* רוחב הענן */
+    animation: moveCloud 4s ease-in-out infinite alternate;
+    opacity: 0.9;
+  }
+  .cloud2-container {
+    position: relative;
+    top: -11.5rem;
+    right: 4rem;
+    width: 100%;
+    height: 200px; /* גובה שבו הענן יכול לנוע */
+    overflow: hidden; /* כדי שהענן שלא יצא מהקונטיינר */
+  }
+  
+  .cloud2 {
+    position: absolute;
+    top: 3.5rem; /* גובה הענן */
+    left: 0;
+    width: 9rem; /* רוחב הענן */
+    animation: moveCloud1 4s ease-in-out infinite alternate;
+    opacity: 0.9;
+  }
+  
+  @keyframes moveCloud {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(50px); } /* כמה פיקסלים להעביר ימינה */
+  }
+  @keyframes moveCloud1 {
+    0% { transform: translateX(25px); }
+    100% { transform: translateX(0); } /* כמה פיקסלים להעביר ימינה */
+  }
+  .start-btn-wrapper {
+    position: relative;
+    display: inline-block;
+    top: -11rem;
+    left: 0.5rem;
+    animation: growShrink 2s infinite;
+  }
+  
+  /* ✨ ההילה */
+  .start-btn-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: -5px; /* כמה הזוהר יוצא החוצה */
+    background: #FFEE97;
+    filter: blur(14px);
+    border-radius: 14px;
+    z-index: 0;
+  }
+  
+  /* הכפתור עצמו */
+  .start-btn {
+    position: relative;
+    top: 0.2rem;
+    z-index: 1;
+  
+    background: #6C6C6C;
+    color: #FFEE97;
+    font-family: Rubik;
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  @keyframes growShrink {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .start-btn:hover {
+    transform: scale(1.1); /* גדילה של 10% */
+  }
+  .openText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    margin-top: 6rem;
+    pointer-events: auto;
+  }
+  
+  .open-text1 {
+    font-family: "rubik";
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FFEE97;
+    position: relative;
+    top: -15rem;
+  }
+  .open-text2 {
+    font-family: "rubik";
+    width: 21rem;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #FFEE97;
+    position: relative;
+    top: -13rem;
+  }
+  .next-btn-opening {
+    width: 6rem;
+    height: 5rem;
+    background-image: url('../assets/images/openingPage/driveNextBtn.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 4.5rem;
+    /* right: 6rem; */
+    background-color: transparent; /* אין צבע רקע */
+    border: none;                  /* אין מסגרת */
+    cursor: pointer;               /* עכבר מראה שהוא לחיץ */
+    outline: none;                 /* מסגרת ברירת מחדל של פוקוס נעלמת */
+    padding: 0; 
+    /* font-size: 0.9rem; */
+    font-family: "rubik";
+    font-weight: 700; 
+    color: #003F88;
+    pointer-events: auto;
+
+}
+.next-btn-opening:disabled {
+  cursor: not-allowed;
+  filter: grayscale(100%);
+  opacity: 0.9;
+  color: #666;
+}
+
+.details {
+  font-family: "rubik-bold";
+  font-size: 1.3rem;
+  text-align: center;
+  color: #FFEE97;
+  position: relative;
+  top: -5.5rem;
+}
+.end-sec-title {
+  font-family: "rubik";
+  width: 15rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #FFEE97;
+  position: relative;
+  top: -5.5rem;
+}
+.lang-btn {
+  position: absolute;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 2rem;
+  height: 2rem;
+  left: 11rem;
+  top: 1rem;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 5rem;
+  font-family: "rubik";
+  color: #003F88;
+  background-color: #FFEE97;
+  border: none;
+
+}
+
+
+/* @media (max-width: 400px) {
+    .carGraphic {
+        font-size: 16px;
+        width: 13rem;
+        height: 14rem;
+        top: 18rem;
+    }
+    .title {
+        top: 8rem;
+    }
+}
+@media (max-width: 360px) {
+    .carGraphic {
+        font-size: 16px;
+        width: 12rem;
+        height: 13rem;
+        position: relative;
+        top: 20rem;
+    }
+    .title {
+        top: 9rem;
+        font-size: 2.5rem;
+    }
+} */

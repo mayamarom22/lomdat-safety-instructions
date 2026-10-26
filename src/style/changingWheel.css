@@ -1,0 +1,33 @@
+.wheel-text-microfopy {
+    position: relative;
+    top: 1.5rem;
+    font-size: 1.2rem;
+    color: #FFEE97;
+    font-family: "rubik";
+    text-align: right;
+    margin: 0rem 5.5rem;
+    padding-top: 0.5rem;
+    width: 20rem;
+}
+.wheel-text {
+    position: relative;
+    top: 4rem;
+    /* left: 0.3rem; */
+    font-size: 0.9rem;
+    color: #FFEE97;
+    font-family: "rubik";
+    text-align: right; /* עדיין נשאר לימין עבור עברית */
+    margin: 0rem 1rem;
+    padding-top: 0.5rem;
+    display: flex;           /* חדש */
+    flex-direction: column;  /* הטקסט מעל הכלים */
+    align-items: flex-end;   /* לתמוך גם בעברית וגם באנגלית */
+    /* gap: 1rem;               רווח בין הטקסט לכלים */
+}
+
+.tools {
+    position: absolute;
+    top: 700%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,249 @@
+#american-questions {
+    display: flex;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    direction: rtl;
+
+}
+
+.row-ques {
+    display: flex;
+    margin: 5% 0% 5% 0%;
+    justify-content: center;
+}
+
+
+.done-ques-btn {
+    position: absolute;
+    width: 5rem;
+    left: -1rem;
+    bottom: -2rem;
+    cursor: pointer;
+}
+
+.pulse-button-hover {
+    background-color: #FFEE97;
+    cursor: pointer;
+    border: none;
+    width: 19rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+    color: #003F88;
+    border-radius: 1rem;
+    font-family: "rubik";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 3rem;
+    pointer-events: all;
+}
+
+.pulse-button-hover:hover {
+    animation: borderPulse 4000ms infinite ease-out, hoverShine 200ms;
+}
+
+.in-last-ques {
+    width: 13.3rem;
+    height: 8.9rem;
+    font-size: 1.3rem;
+}
+
+@keyframes borderPulse {
+    0% {
+        box-shadow: inset 0px 0px 0px 5px rgba(255, 255, 255, 0.4),
+            0px 0px 0px 0px rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        box-shadow: inset 0px 0px 0px 3px rgba(24, 24, 176, 0.2),
+            0px 0px 0px 10px rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes hoverShine {
+    0% {
+        background-image: linear-gradient(135deg,
+                rgba(255, 255, 255, 0.4) 0%,
+                rgba(255, 255, 255, 0) 50%,
+                rgba(255, 255, 255, 0) 100%);
+    }
+
+    50% {
+        background-image: linear-gradient(135deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.4) 50%,
+                rgba(255, 255, 255, 0) 100%);
+    }
+
+    100% {
+        background-image: linear-gradient(135deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0) 50%,
+                rgba(255, 255, 255, 0.4) 100%);
+    }
+}
+
+.correct {
+    background-color: rgb(152, 223, 152);
+}
+
+.wrong {
+    background-color: rgb(255, 91, 91);
+}
+
+.div-mulQ {
+    width: 22rem;
+    /* background: #fff; */
+    /* border-radius: 0.5rem; */
+    box-shadow: 0 15px 20px -20px rgba(0, 0, 0, 0.4);
+    position: relative;
+    min-height: 15rem;
+    top: 6rem;
+    left: 0rem;
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.5rem; */
+    padding: 1.5rem;
+}
+.Wheel {
+    width: 3rem;
+    /* height: 4rem; */
+    position: relative;
+    top: 3.5rem;
+    left: 8rem;
+}
+.buttons-container {
+    height: 4rem;
+    pointer-events: none;
+}
+
+
+@keyframes hoverShine {
+    0% {
+        background-image: linear-gradient(135deg,
+                rgba(255, 255, 255, 0.4) 0%,
+                rgba(255, 255, 255, 0) 50%,
+                rgba(255, 255, 255, 0) 100%);
+    }
+
+    50% {
+        background-image: linear-gradient(135deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.4) 50%,
+                rgba(255, 255, 255, 0) 100%);
+    }
+
+    100% {
+        background-image: linear-gradient(135deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0) 50%,
+                rgba(255, 255, 255, 0.4) 100%);
+    }
+}
+
+
+.fix-explain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.explain-protocol {
+    width: 30rem;
+    margin-top: 1rem;
+}
+
+.explain-text {
+    margin: 0.3rem;
+}
+.carSvg {
+    position: absolute;
+    z-index: 2;
+    transform: translate();
+  }
+  /* overlay שחור חצי שקוף */
+.overlay {
+    position: fixed; /* או absolute אם רצוי יחסית ל-container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* מעל כל התוכן */
+  }
+  
+  /* הדיב הפנימי */
+  .container-next {
+    background-color:#FFEE97;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 300px;
+    font-family: "rubik";
+  }
+  
+  /* כפתורים בתוך הדיב */
+  .container-next-buttons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .container-next-buttons button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .container-next-buttons button:first-child {
+    background-color: #eee;
+    border-radius: 0.5rem;
+  }
+  
+  .container-next-buttons button:last-child {
+    background-color: #003F88;
+    color: #FFEE97;
+    border-radius: 0.5rem;
+  }
+
+@media screen and (max-width: 600px) {
+
+/* 
+    #american-questions {
+        height: 91vh;
+        margin-top: -7rem;
+    } */
+
+    .done-ques-btn {
+        position: absolute;
+        width: 5rem;
+        left: 1rem;
+        bottom: -3rem;
+    }
+
+    .title-questionMultiple {
+        width: 100%;
+    }
+
+    .in-last-ques {
+        height: 9.9rem;
+    }
+}
+
+
+@media (max-width: 360px) {
+    /* .div-mulQ {
+        width: 19rem;
+    } */
+    /* .pulse-button-hover {
+        width: 8rem;
+    } */
+}
